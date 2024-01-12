@@ -1,0 +1,134 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+		sans-serif;
+}
+body {
+	width: 100vw;
+	height: 100vh;
+	background-color: #000;
+	margin: 0;
+}
+
+.container {
+	background: #485563; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#29323c,
+		#485563
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#29323c,
+		#485563
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+}
+
+.card {
+	position: absolute;
+	width: 90%;
+	max-width: 350px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 20px;
+	/* display: flex;
+	justify-content: space-between; */
+	text-align: center;
+	padding: 20px 40px;
+	color: white;
+	box-sizing: border-box;
+	background: #f2709c; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#ff9472,
+		#f2709c
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#ff9472,
+		#f2709c
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* Search Area Design */
+
+.searchArea {
+	width: 100%;
+	height: 60px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.searchArea input {
+	/* flex: 1; */
+	outline: 0;
+	border: 0;
+	background: #ebfffc;
+	color: #555;
+	padding: 10px 25px;
+	border-radius: 20px;
+	/* flex: 1; */
+	margin-right: 16x;
+	/* font-size: 18px; */
+}
+
+.searchArea button {
+	outline: 0;
+	border: 0;
+	background: #ebfffc;
+	width: 45px;
+	height: 45 px;
+	border-radius: 50%;
+	padding: 10px;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+.searchArea button i {
+	width: 16px;
+}
+
+/* Weather Area Styling */
+
+.weather {
+	margin-top: 20px;
+	display: none;
+}
+.weather-icon {
+	width: 100px;
+}
+.weather h1 {
+	font-size: 26px;
+}
+.details {
+	/* width: 100%;*/
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 20px;
+}
+.details img {
+	width: 50px;
+	height: 40px;
+}
+
+.details .col p:nth-child(1) {
+	margin-top: 10px;
+	font-size: larger;
+	color: #f9f6f6 !important;
+}
+
+.error {
+	text-align: center;
+	margin-top: 10px;
+	font-size: 20px;
+	display: none;
+}
